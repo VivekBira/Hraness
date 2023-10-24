@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Hraness_1698167122380-pr-trigger-input-set
+  identifier: Build_Hraness_1698167122380prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Hraness_1698167122380
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
