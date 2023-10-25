@@ -26,6 +26,17 @@ pipeline:
                   timeout: ""
                   type: Run
                   description: running successfully
+              - step:
+                  type: GitClone
+                  name: GitClone_1
+                  identifier: GitClone_1
+                  spec:
+                    connectorRef: vivek
+                    build:
+                      type: branch
+                      spec:
+                        branch: main
+                  description: okay
           platform:
             arch: Amd64
             os: Linux
