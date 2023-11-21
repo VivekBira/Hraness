@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_VivekBira_Hraness_1700558390320-pr-trigger-input-set
+  identifier: Build_VivekBira_Hraness_1700558390320prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Client_Pipelines
+  pipeline:
+    identifier: Build_VivekBira_Hraness_1700558390320
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
